@@ -1,10 +1,12 @@
 import './App.css';
-import HW from './components/Hw';
+import InputForm from './components/HW/InputForm';
+import './components/HW/form.css'
 
 function App() {
   return (
-    <>
-    </>
+    <div className="App">
+      <InputForm/>
+    </div>
   );
 }
 
