@@ -1,8 +1,14 @@
-const InputCom = ({ id, type, value, onChange }) => {
+const InputCom = ({ id,label, value, onChange, required ,type}) => {
     return (
         <>
-            <label></label>
-            <input placeholder={value} type={type}  id={id} className="input" onChange={onChange} required />
+            <label>{label}</label>
+            <input
+                id={id}
+                placeholder={value}                
+                type={type}
+                onChange={onChange}
+                required={required}
+            />
         </>
     )
 };

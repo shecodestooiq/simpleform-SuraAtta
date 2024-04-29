@@ -19,15 +19,15 @@ const InputForm = () => {
 
     return (
         <form className="form">
-            <InputCom value="Name" type="text" id="name"
+            <InputCom value="Name" type="text" id="name" required
                 onChange={event => {
                     setName(event.target.value);
                 }}/>
-            <InputCom value="Email" type="email" id="email"
+            <InputCom value="Email" type="email" id="email" required
                 onChange={event => {
                     setEmail(event.target.value);
                 }} />
-            <Message onChange={event => {
+            <Message required onChange={event => {
                 setMessage(event.target.value);
             }} />
             <ButtonCom func={showAlert} />

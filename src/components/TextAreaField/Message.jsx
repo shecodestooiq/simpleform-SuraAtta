@@ -1,8 +1,14 @@
-const Message = ({ onChange }) => {
+const Message = ({id, label, value, onChange, required }) => {
     return (
         <>
-            <label></label>
-            <textarea id="message" name="message" rows="2" cols="25" className="input" placeholder="Message" onChange={onChange} required></textarea>
+            <label >{label}</label>
+            <textarea
+                        id={id}
+                value={value}
+                onChange={onChange}
+                required={required}
+                placeholder="Message"
+            />
         </>
     );
 };
